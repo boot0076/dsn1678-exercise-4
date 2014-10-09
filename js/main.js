@@ -3,8 +3,11 @@ var $sun = $('.sun');
 var $sunSection = $('.sun-section');
 var $dipperSection = $('.dipper-section');
 var $dipper = $('.dipper');
-var $shuttleSection =$('.shuttle-section');
+var $shuttleSection = $('.shuttle-section');
 var $shuttle = $('.shuttle');
+var $shipSection = $('.ship-section');
+var $ship1 = $('.ship1');
+var $ship2 = $('.ship2');
 
 $win.on('scroll', function () {
 	var scrollPos = $win.scrollTop();	
@@ -20,3 +23,8 @@ $dipperSection.waypoint(function () {
 $shuttleSection.waypoint(function () {
 	$shuttle.addClass('js-shuttle-fade');
 }, { offset: '50%'});
+
+$shipSection.waypoint(function () {
+	$ship1.addClass('js-ship1-fade');
+	$ship2.addClass('js-ship2-fade');
+}, { offset: '80%'});
